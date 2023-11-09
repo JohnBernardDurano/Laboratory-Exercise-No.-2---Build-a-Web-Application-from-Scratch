@@ -22,5 +22,13 @@ namespace WebApplication1.Models.ViewModel
         [Required(ErrorMessage = "*")]
         [Display(Name = "Created By")]
         public int CreatedBy { get; set; }
+
+        [Required(AllowEmptyStrings = true)]
+        public string AccountImage { get; set; }
+    }
+
+    public class UsersModel
+    {
+        public List<UserModel> Users { get; set; }
     }
 }
