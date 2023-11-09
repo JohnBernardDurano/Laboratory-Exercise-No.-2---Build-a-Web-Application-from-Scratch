@@ -26,7 +26,7 @@ app.MapControllerRoute(
 
 app.MapControllerRoute(
     name: "Acccount",
-    pattern: "{area:exists}/{controller=Account}/{action=Signup}");
+    pattern: "Account/{action=Index}/{id}");
 
 
 app.Run();
